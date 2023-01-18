@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Port Scanner</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+
+  </head>
+  <body>
+  <center><h1>TCP PORT SCAN</h1> <br> <h4> powered by https://piratesshield.com</h4></center>
+ 
+    <form method="POST" action="/scan">
+      <label for="host">Host:</label>
+      <input type="text" id="host" name="host" required>
+      <br>
+      <label for="ports">Ports:</label>
+      <input type="text" id="ports" name="ports" placeholder="e.g. 22, 80, 443" required>
+      <br><br>
+      <input type="submit" value="Scan">
+    </form>
+  </body>
+</html>
